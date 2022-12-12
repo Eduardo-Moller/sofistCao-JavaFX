@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PetsController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="239.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="37.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/adotar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="469.0" prefWidth="436.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="155.0" layoutY="30.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Cadastrar Pet" />
+            <TextField fx:id="nomeInput" layoutX="53.0" layoutY="71.0" promptText="Nome do pet" style="-fx-background-color: transparent; -fx-border-color: #1E90FF; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="tipoInput" layoutX="53.0" layoutY="109.0" promptText="Tipo de pet" style="-fx-background-color: transparent; -fx-border-color: #1E90FF; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="idedeInput" layoutX="53.0" layoutY="147.0" promptText="Idade do pet" style="-fx-background-color: transparent; -fx-border-color: #1E90FF; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="racaInput" layoutX="244.0" layoutY="71.0" promptText="Raça do pet" style="-fx-background-color: transparent; -fx-border-color: #1E90FF; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="ultimodonoInput" layoutX="244.0" layoutY="109.0" promptText="Nome do último dono" style="-fx-background-color: transparent; -fx-border-color: #1E90FF; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextArea fx:id="descricaoInput" layoutX="56.0" layoutY="191.0" prefHeight="156.0" prefWidth="342.0" promptText="Descrição..." style="-fx-border-color: #1E90FF; -fx-border-width: 2px;" />
+            <Button fx:id="cadastrarBtn" layoutX="163.0" layoutY="396.0" mnemonicParsing="false" onAction="#btnCadastrarAction" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #1E90FF;" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblSucesso" layoutX="142.0" layoutY="368.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnVoltar" layoutX="312.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnVoltarAction" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #e5e4e2; -fx-font-weight: bold; -fx-font-size: 20px; -fx-border-radius: 30px;" text="&gt;" textFill="DODGERBLUE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
